@@ -1,0 +1,26 @@
+{
+  "name": "miscelanea-css",
+  "version": "1.0.0",
+  "description": "PureCSS examples from YouTube tutorials",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --out-dir build/ --public-url ./",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "purecss",
+    "youtube",
+    "tutorials"
+  ],
+  "author": "@silvestrevivo",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.0"
+  }
+}
