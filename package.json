@@ -17,7 +17,12 @@
   ],
   "author": "@silvestrevivo",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silvestrevivo//miscelanea-css.git"
+  },
   "devDependencies": {
+    "cssnano": "^4.1.4",
     "node-sass": "^4.9.3"
   },
   "dependencies": {
