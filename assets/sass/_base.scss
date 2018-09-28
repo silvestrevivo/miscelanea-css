@@ -1,0 +1,58 @@
+// for all elements in the body => reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; // inherit from the body
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  outline: 0;
+  text-decoration: none;
+  &:active,
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+::-moz-selection {
+  text-shadow: none;
+  background-color: orangered;
+  color: #fff;
+}
+
+::selection {
+  text-shadow: none;
+  background-color: orangered;
+  color: #fff;
+}
+
+img::selection {
+  background-color: transparent;
+}
+
+img::-moz-selection {
+  background-color: transparent;
+}
