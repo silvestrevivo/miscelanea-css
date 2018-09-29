@@ -1,0 +1,25 @@
+#preloader1 {
+  height: 100vh;
+  position: relative;
+
+  .preloader1 {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    border: 30px solid #ffffff;
+    border-top: 30px solid #1f469b;
+    border-radius: 50%;
+    animation: loader 2s linear infinite;
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
