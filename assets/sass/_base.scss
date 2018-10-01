@@ -56,3 +56,19 @@ img::selection {
 img::-moz-selection {
   background-color: transparent;
 }
+
+footer {
+  color: #ffffff;
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  bottom: 10px;
+  text-align: center;
+  font-size: 12px;
+  a {
+    transition: 0.2s ease-in-out;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
