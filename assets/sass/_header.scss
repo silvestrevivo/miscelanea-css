@@ -4,6 +4,8 @@ header {
   height: 100vh;
   background: url("../img/header.jpg") no-repeat center center;
   background-size: cover;
+  position: relative;
+  z-index: 2;
 
   .rev-block {
     font-family: "Poppins", sans-serif;
