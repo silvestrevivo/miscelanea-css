@@ -67,6 +67,11 @@ img::-moz-selection {
   z-index: 1;
 }
 
+section {
+  height: 100vh;
+  position: relative;
+}
+
 footer {
   color: #ffffff;
   opacity: 0.8;
