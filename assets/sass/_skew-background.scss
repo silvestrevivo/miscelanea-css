@@ -1,0 +1,52 @@
+#skew-background {
+  background: linear-gradient(
+    -45deg,
+    #125676 9%,
+    #da3c1c 25%,
+    #eb7867 45%,
+    #ed8775 62%,
+    #ef9081 72%,
+    #f2a79c 78%,
+    #f9d2cf 100%
+  );
+  overflow: hidden;
+
+  h3 {
+    text-align: center;
+    margin-top: 200px;
+    span {
+      padding-bottom: 8px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 0px;
+        transition: 0.5s cubic-bezier(0.54, 0.05, 0.36, 1.64) all;
+        background-color: #fff;
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+          height: 3px;
+        }
+      }
+    }
+  }
+
+  .skew {
+    padding: 200px 0;
+    transform: skew(0deg, -10deg);
+    position: absolute;
+    width: 100%;
+    bottom: -150px;
+    background-color: #00000066;
+
+    .content {
+      text-align: center;
+      transform: skew(0deg, 10deg);
+    }
+  }
+}
