@@ -1,0 +1,39 @@
+#hover1{
+  @include background-animated(#004f99, #003566, #00213f, #001a33);
+
+  .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-60%);
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #ffffff12;
+    border: none;
+
+    li{
+      display: inline-block;
+
+      a{
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: lighter;
+        font-size: 30px;
+        padding: 0 20px;
+        display: inline-block;
+        &::after{
+          content: '';
+          display: block;
+          width: 0;
+          height: 3px;
+          background-color: #ffffff;
+          transition: width .2s;
+        }
+        &:hover::after{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
