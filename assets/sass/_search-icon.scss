@@ -1,5 +1,5 @@
 #search-icon {
-  animation: animbackground 10s ease-in infinite;
+  @include background-animated(#8b2113, #538b13, #13838b, #8b4513);
 
   .container {
     position: absolute;
@@ -66,26 +66,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes animbackground {
-  0% {
-    background-color: #8b2113;
-  }
-  20% {
-    background-color: #b6c43b;
-  }
-  40% {
-    background-color: #538b13;
-  }
-  60% {
-    background-color: #13838b;
-  }
-  80% {
-    background-color: #8b4513;
-  }
-  100% {
-    background-color: #8b2113;
   }
 }

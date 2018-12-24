@@ -1,4 +1,6 @@
 #preloader2 {
+  @include background-animated(#000000, #141414, #333333, #2c2c2c,);
+
   .preloader2 {
     position: absolute;
     top: 50%;
