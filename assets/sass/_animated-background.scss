@@ -1,0 +1,39 @@
+#animated-background {
+  animation: animated-background 8s infinite;
+
+  p {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    width: 40%;
+    text-align: justify;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    strong {
+      text-decoration: underline;
+    }
+  }
+
+  @keyframes animated-background {
+    0% {
+      background: #2e5366;
+    }
+    20% {
+      background: #4296c0;
+    }
+    40% {
+      background: #42c077;
+    }
+    60% {
+      background: #a5c042;
+    }
+    80% {
+      background: #c04242;
+    }
+    100% {
+      background: #4f42c0;
+    }
+  }
+}
