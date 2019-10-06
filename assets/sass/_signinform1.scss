@@ -1,0 +1,50 @@
+#signinform1{
+  background: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') 50% 50% no-repeat;
+  background-size: cover;
+  font-family: Source Sans Pro;
+
+  .signin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 3em;
+
+    h3 {
+      font-weight: lighter;
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 50px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    input{
+      display: block;
+      font-family: inherit;
+      width: 320px;
+      height: 50px;
+      background: rgba(0, 0, 0, 0.3);
+      outline: none;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      font-weight: lighter;
+      font-size: 14px;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      color: rgba(255, 255, 255, 0.8);
+      border-radius: 5px;
+    }
+
+    button {
+      width: 320px;
+      height: 50px;
+      font-size: 16px;
+      background: #000;
+      font-weight: lighter;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
