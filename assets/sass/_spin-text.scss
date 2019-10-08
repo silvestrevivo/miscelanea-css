@@ -1,0 +1,44 @@
+#spin-text {
+  background: linear-gradient(
+    135deg,
+    #ffb76b 0%,
+    #ffa73d 26%,
+    #ff7c00 56%,
+    #ffb76b 82%,
+    #ff7f04 100%
+  );
+  ul {
+    padding: 50px;
+    margin: 0;
+    border: 10px solid #ffffff;
+    overflow: auto;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    &:hover {
+      li {
+        transform: rotateY(360deg);
+        &:nth-child(1) {
+          transition-delay: 0.6s;
+        }
+        &:nth-child(2) {
+          transition-delay: 0.4s;
+        }
+        &:nth-child(3) {
+          transition-delay: 0.2s;
+        }
+      }
+    }
+    li {
+      list-style: none;
+      float: left;
+      font-size: 5em;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      transition: 0.6s;
+    }
+  }
+}
