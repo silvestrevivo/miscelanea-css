@@ -1,0 +1,60 @@
+#personal-card-1{
+  background: url('https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000') center center no-repeat;
+  background-size: cover;
+
+  .box{
+    width: 500px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    border-radius: 5px;
+
+    .box-img{
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+    }
+
+    h3 {
+      font-size: 40px;
+      letter-spacing: 4px;
+      font-weight:100;
+      margin: 15px;
+    }
+
+    h5{
+      font-size: 25px;
+      letter-spacing: 3px;
+      font-weight:100;
+      margin: 15px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 24px;
+    }
+
+    ul{
+      margin-top: 20px;
+      li {
+        display: inline-block;
+        margin: 6px;
+        list-style: none;
+        a{
+          color: #fff;
+          text-decoration: none;
+          font-size: 60px;
+          transition: all .2s ease-in-out;
+          &:hover{
+            color: #b9b9b9;
+          }
+        }
+      }
+    }
+  }
+}
