@@ -1,0 +1,46 @@
+#social-media-icons2{
+  @include background-animated(#eccfc6, #f3db8c, #aaddf0, #99f8e2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .social-buttons{
+    a{
+      display: inline-flex;
+      text-decoration: none;
+      font-size: 18px;
+      width: 60px;
+      height: 60px;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 0 8px;
+      &:hover{
+        &::before{
+          transform: scale(0);
+        }
+        i{
+          background: linear-gradient(45deg, #22a6b3, #30336b);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transform: scale(2.2);
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(45deg, #22a6b3, #30336b);
+        border-radius:50px;
+        transition: 0.3s ease-in;
+      }
+      i {
+        transition: 0.3s ease-in;
+        z-index:1;
+      }
+    }
+  }
+}
