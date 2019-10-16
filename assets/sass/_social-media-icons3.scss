@@ -1,0 +1,66 @@
+#social-media-icons3 {
+  @include background-animated(#99f8e2, #f3db8c, #eccfc6, #aaddf0);
+  font-family: "Ionicons", sans-serif;
+
+  .social-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    a {
+      width: 70px;
+      height: 70px;
+      margin: 0 15px;
+      display: block;
+      color: #fff;
+      overflow: hidden;
+      text-align: center;
+      text-decoration: none;
+      font-size: 40px;
+      border-radius: 50%;
+      &::before {
+        display: block;
+        margin: 13px 0;
+        transition: all 0.4s;
+      }
+      &:hover {
+        &::before {
+          margin-top: -44px;
+        }
+      }
+      &::after {
+        display: block;
+        transition: all 0.4s;
+      }
+      &:nth-child(1) {
+        background: #a21414;
+        &::before,
+        &::after {
+          content: "\f2d9";
+        }
+      }
+      &:nth-child(2) {
+        background: #158b28;
+        &::before,
+        &::after {
+          content: "\f125";
+        }
+      }
+      &:nth-child(3) {
+        background: #153c91;
+        &::before,
+        &::after {
+          content: "\f100";
+        }
+      }
+      &:nth-child(4) {
+        background: #1b9e9c;
+        &::before,
+        &::after {
+          content: "\f110";
+        }
+      }
+    }
+  }
+}
