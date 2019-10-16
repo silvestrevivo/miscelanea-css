@@ -25,11 +25,11 @@
     line-height: 220px;
     overflow: hidden;
     font-family: sans-serif;
-    animation: animate 12s linear infinite;
+    animation: animate-floatin-header 12s linear infinite;
   }
 }
 
-@keyframes animate {
+@keyframes animate-floatin-header {
   0% {
     transform: translate(55%, -50%);
   }
