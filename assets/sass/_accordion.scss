@@ -1,0 +1,43 @@
+#accordion{
+  @include background-animated(#397466, #918150, #886e65, #597580);
+  .accordion-container{
+    max-width: 600px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    overflow: hidden;
+    article{
+      border-bottom: 2px solid gray;
+        &:last-child{
+          border: none;
+        }
+      p {
+        overflow: hidden;
+        max-height: 0;
+        padding: 0;
+        margin: 0;
+        text-align: justify;
+        background-color: #555555;
+        transition: all .3s ease-in-out;
+      }
+      a{
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        padding: 10px;
+        background: #254b6a;
+        color: #fff;
+      }
+      &:target{
+        p{
+          max-height: 20em;
+          padding: 10px;
+          background-color: #c1c1c1;
+        }
+      }
+    }
+  }
+}
