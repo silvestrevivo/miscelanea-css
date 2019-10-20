@@ -1,0 +1,25 @@
+#hover3 {
+  @include background-animated(#99f8e2, #f3db8c, #eccfc6, #aaddf0);
+  .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: grey;
+    &::before{
+      content: 'developer';
+      color: #141414;
+      position: absolute;
+      width: 0;
+      overflow: hidden;
+      transition: width .2s ease-in-out;
+    }
+    &:hover::before{
+      width: 100%;
+    }
+  }
+}
