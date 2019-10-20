@@ -1,0 +1,36 @@
+#image-overlay2 {
+  background:#793232;
+  .content{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    img{
+      width: 110%;
+    }
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: -100%;
+      bottom: 0;
+      width: 100%;
+      transition: all .3s ease-in-out;
+      background-color: #cd5c5c80;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p{
+        font-size: 30px;
+        text-transform: uppercase;
+        border: 5px solid white;
+        padding: 10px 25px;
+      }
+    }
+    &:hover .overlay{
+      left: 0%;
+    }
+  }
+}
