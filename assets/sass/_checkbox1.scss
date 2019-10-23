@@ -1,0 +1,61 @@
+#checkbox1{
+  // background-color: #f1f1f1;
+  @include background-animated(#99f8e2, #f3db8c, #eccfc6, #aaddf0);
+  font-family: sans-serif;
+
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h3{
+      color: #663232;
+      margin: 25px 0;
+      font-size: 40px;
+      text-transform: uppercase;
+    }
+    .check{
+      position: relative;
+      display: block;
+      font-size: 28px;
+      color: #313131;
+      margin-bottom: 20px;
+      padding-left: 46px;
+      cursor: pointer;
+      input{
+        opacity: 0;
+        position: absolute;
+        &:checked ~ span{
+          background: #3498db;
+          &::before{
+            display: block;
+          }
+        }
+      }
+      span{
+        position: absolute;
+        left: 0;
+        top: -5px;
+        height: 40px;
+        width: 40px;
+        background-color: #663232;
+        color: white;
+        text-align: center;
+        transition: 0.3s all;
+        &::before{
+          content: "\f14a";
+          font-family: Ionicons, sans-serif;
+          display: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 30px;
+        }
+      }
+      &:hover > span {
+        opacity: 0.8;
+      }
+    }
+  }
+}
