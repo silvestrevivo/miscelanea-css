@@ -1,33 +1,36 @@
-#simple-slider2{
+#simple-slider2 {
   @include background-animated(#4b413e, #756942, #4a6670, #237a66);
 
-  .simple-slider2{
+  .simple-slider2 {
     width: 700px;
     height: 400px;
-    background: url('https://avatar.nl/wp-content/uploads/2019/02/summer-amsterdam-FP.jpg') no-repeat center center / 100% 100%;
+    background: url("https://avatar.nl/wp-content/uploads/2019/02/summer-amsterdam-FP.jpg")
+      no-repeat center center / 100% 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -moz-animation: slide 20s infinite;
     -webkit-animation: slide 20s infinite;
-    animation: slide 20s infinite;
+    animation: simpleslider2 20s infinite;
   }
 
-  @keyframes slide{
-    25%{
-        background: url('https://www.lifegate.it/app/uploads/Amsterdam.jpg') no-repeat center center / 100% 100%;
+  @keyframes simpleslider2 {
+    25% {
+      background: url("https://www.lifegate.it/app/uploads/Amsterdam.jpg")
+        no-repeat center center / 100% 100%;
     }
-    50%{
-        background: url('https://www.luoghidiinteresse.it/wp-content/uploads/08-Amsterdam-Canali-02-696x459.jpg') no-repeat center center / 100% 100%;
+    50% {
+      background: url("https://www.luoghidiinteresse.it/wp-content/uploads/08-Amsterdam-Canali-02-696x459.jpg")
+        no-repeat center center / 100% 100%;
     }
-    75%{
-        background: url('https://www.zingarate.com/pictures/2018/05/29/capodanno-amsterdam_2.jpeg') no-repeat center center / 100% 100%;
+    75% {
+      background: url("https://www.zingarate.com/pictures/2018/05/29/capodanno-amsterdam_2.jpeg")
+        no-repeat center center / 100% 100%;
     }
-    100%{
-        background: url('https://avatar.nl/wp-content/uploads/2019/02/summer-amsterdam-FP.jpg') no-repeat center center / 100% 100%;
+    100% {
+      background: url("https://avatar.nl/wp-content/uploads/2019/02/summer-amsterdam-FP.jpg")
+        no-repeat center center / 100% 100%;
     }
   }
 }
-
-
