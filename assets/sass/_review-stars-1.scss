@@ -1,0 +1,35 @@
+#review-stars-1 {
+  @include background-animated(#4b413e, #756942, #4a6670, #237a66);
+
+  .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    direction: rtl;
+
+    a {
+      font-size: 120px;
+      margin: 0 5px;
+      color: #313131;
+      transition: 0.3s all;
+
+      &:hover {
+        color: #f1c40f;
+      }
+    }
+
+    .b1:hover ~ a {
+      color: #f1c40f;
+    }
+    .b2:hover ~ a {
+      color: #f1c40f;
+    }
+    .b3:hover ~ a {
+      color: #f1c40f;
+    }
+    .b4:hover ~ a {
+      color: #f1c40f;
+    }
+  }
+}
