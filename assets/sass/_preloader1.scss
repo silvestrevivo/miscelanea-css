@@ -1,12 +1,14 @@
 #preloader1 {
+  @include background-animated(#6b3838, #5b7235, #2b4964, #6a5718);
+
   .preloader1 {
     height: 300px;
     width: 300px;
     position: absolute;
-    top: 35%;
-    left: 35%;
-    border: 30px solid #ffffff;
-    border-top: 30px solid #1f469b;
+    top: 50%;
+    left: 50%;
+    border: 30px solid #ffffff85;
+    border-top: 30px solid #1f469bad;
     border-radius: 50%;
     animation: loader 2s linear infinite;
   }
@@ -14,9 +16,9 @@
 
 @keyframes loader {
   0% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
